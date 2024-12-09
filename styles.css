@@ -1,0 +1,190 @@
+/* Fundal general cu imagine */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("./Pictures/fabrica-philip-morris-romania.avif"); /* Specifică locația imaginii */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conținutul principal */
+.main-content {
+  position: relative;
+  bottom: 350px;
+  z-index: 2; /* Ridică butoanele deasupra imaginii */
+}
+
+.main-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Stiluri generale pentru toate butoanele */
+.main-buttons button {
+  padding: 20px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Stil pentru Buton 1 */
+.button1 {
+  background-color: #00c1ff;
+  color: black;
+  font-weight: bold;
+}
+.button1:hover {
+  background-color: #0079ff;
+  transform: translateY(-3px);
+}
+
+/* Stil pentru Buton 2 */
+.button2 {
+  background-color: #ff9400;
+  color: black;
+  font-weight: bold;
+}
+.button2:hover {
+  background-color: #ff7000;
+  transform: translateY(-3px);
+}
+
+/* Stil pentru Buton 3 */
+.button3 {
+  background-color: #fc5151;
+  color: black;
+  font-weight: bold;
+}
+.button3:hover {
+  background-color: #ff002f;
+  transform: translateY(-3px);
+}
+
+/* Stil pentru Buton 4 */
+.button4 {
+  background-color: #ffff89;
+  color: black;
+  font-weight: bold;
+}
+.button4:hover {
+  background-color: #ffff00;
+  transform: translateY(-3px);
+}
+
+/* Overlay de sus în jos */
+.overlay {
+  height: 0; /* Începe cu o înălțime de 0 */
+  width: 100%; /* Lățime completă */
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden; /* Dezactivează scroll-ul când overlay-ul este închis */
+  transition: height 0.5s ease; /* Tranziția pe înălțime */
+}
+
+/* Conținutul din interiorul overlay-ului */
+.overlay-content {
+  position: relative;
+  right: 0.1%; /* Ajustează distanța conținutului față de vârf */
+  top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  display: flex; /* Secventa de mai jos modifica scrierea textului in mod orizontal */
+  list-style-type: none;
+  flex-wrap: wrap;
+  flex: 1 1 calc(10% - 10px);
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.overlay-content span {
+  display: inline-block;
+  border: 3px solid #000;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: #333;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+
+.overlay-content span:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.overlay a:hover {
+  color: black;
+}
+
+/* Butonul de închidere */
+.overlay .closebtn {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  right: 20px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Stiluri individuale pentru fiecare overlay */
+
+/* Overlay-ul 1 */
+.overlay-1 {
+  background-color: #00a2ff;
+  background-image: url("./Pictures/iqos3.png");
+  background-repeat: no-repeat;
+  background-size: 127rem;
+}
+
+/* Overlay-ul 2 */
+.overlay-2 {
+  background-color: #ff8d00;
+}
+
+/* Overlay-ul 3 */
+.overlay-3 {
+  background-color: #ff4b5e;
+}
+
+/* Overlay-ul 4 */
+.overlay-4 {
+  background-color: #c4b454;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 30px;
+    top: 5px;
+    right: 15px;
+  }
+}
