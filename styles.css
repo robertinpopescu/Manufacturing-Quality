@@ -5,7 +5,7 @@ body {
   font-family: Arial, sans-serif;
   background-image: url("Pictures/fabrica-philip-morris-romania.avif"); /* Specifică locația imaginii */
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
@@ -15,20 +15,22 @@ body {
 
 /* Conținutul principal */
 .main-content {
-  position: relative;
-  bottom: 350px;
-  z-index: 2; /* Ridică butoanele deasupra imaginii */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  transform: translateY(-10%); /* Ajustare proporțională */
 }
 
 .main-buttons {
   display: flex;
-  gap: 20px;
+  gap: 2vw;
 }
 
 /* Stiluri generale pentru toate butoanele */
 .main-buttons button {
-  padding: 20px 40px;
-  font-size: 18px;
+  padding: 2vh 4vw;
+  font-size: 1.5rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -101,14 +103,13 @@ body {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: white;
-  display: flex; /* Secventa de mai jos modifica scrierea textului in mod orizontal */
+  display: flex; /* Secventa de mai jos modifică scrierea textului în mod orizontal */
   list-style-type: none;
   flex-wrap: wrap;
-  flex: 1 1 calc(10% - 10px);
   justify-content: center;
+  gap: 2vw;
   padding: 0;
   margin: 0;
-  gap: 20px;
 }
 
 .overlay-content span {
@@ -118,7 +119,7 @@ body {
   border-radius: 10px;
   background-color: white;
   color: #333;
-  font-size: 35px;
+  font-size: 2rem; /* Ajustare proporțională */
   transition: all 0.3s ease;
 }
 
@@ -130,7 +131,7 @@ body {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 2rem; /* Ajustare proporțională */
   font-weight: bold;
   font-style: italic;
   color: white;
@@ -160,7 +161,8 @@ body {
   background-color: #00a2ff;
   background-image: url("Pictures/iqos3.png");
   background-repeat: no-repeat;
-  background-size: 127rem;
+  background-position: center center;
+  background-size: cover; /* Pentru a adapta imaginea la dimensiuni diferite */
 }
 
 /* Overlay-ul 2 */
@@ -178,13 +180,24 @@ body {
   background-color: #c4b454;
 }
 
-@media screen and (max-height: 450px) {
+/* Media Queries */
+@media screen and (max-height: 850px) {
   .overlay a {
-    font-size: 20px;
+    font-size: 1.5rem; /* Ajustare proporțională */
   }
   .overlay .closebtn {
     font-size: 30px;
     top: 5px;
     right: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-buttons button {
+    font-size: 1rem;
+    padding: 1vh 2vw;
+  }
+  .overlay a {
+    font-size: 1.5rem;
   }
 }
