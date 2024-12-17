@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manufacturing Quality</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="main-buttons">
+        <button class="button1" onclick="openNav('nav1')">MQ RRP</button>
+        <button class="button2" onclick="openNav('nav2')">MQ DIGI</button>
+        <button class="button3" onclick="openNav('nav3')">MQ PRIMARY</button>
+        <button class="button4" onclick="openNav('nav4')">MQ CC</button>
+      </div>
+    </div>
+    <!-- Overlay-uri cu clase individuale -->
+    <div id="nav1" class="overlay overlay-1">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav('nav1')"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a
+          href="https://pmicloud.sharepoint.com/sites/RefRomania/SitePages/Quality.aspx"
+          target="_blank"
+          ><span>About</span></a
+        >
+        <a
+          href="https://pmicloud.sharepoint.com/:x:/r/teams/Quality-Management-Quality-Romania/_layouts/15/Doc.aspx?sourcedoc=%7B0BF9A6E0-B872-4F00-9E41-F6916FB83317%7D&file=Prezenta%20Secondary%20RRP%202024%20%20.xlsx&action=default&mobileredirect=true"
+          target="_blank"
+          ><span>Prezenta</span></a
+        >
+        <a
+          href="https://my-pmi.force.com/s/login/?language=ro&ec=302&startURL=%2Fs%2F"
+          target="_blank"
+          ><span>My PMI</span></a
+        >
+        <a
+          href="https://performancemanager.successfactors.eu/sf/home?company=PMIProd&_s.crb=cOntbhfniE%252fJNVM5hgdihVEFcf3L9olCTNumqvO9hao%253d"
+          target="_blank"
+          ><span>Map</span></a
+        >
+        <a
+          href="http://imelweb-ro-prd.pmiapps.biz/Apriso/Start/logon.html?ReturnUrl=http%3a%2f%2fimelweb-ro-prd.pmiapps.biz%2fapriso%2fapriso%2f%23%2fsearch&track=client"
+          target="_blank"
+          ><span>iMEL</span></a
+        >
+        <a
+          href="https://pmicloud.sharepoint.com/:x:/r/teams/Quality-ManufacturingQuality-Quality-Romania/_layouts/15/Doc.aspx?sourcedoc=%7B6FE82046-6F9E-43C9-8AAA-B383B91C1A1F%7D&file=Manufacturing%20Quality%20DDS_2024.xlsx&action=default&mobileredirect=true"
+          target="_blank"
+          ><span>DDS</span></a
+        >
+        <a
+          href="https://pmicloud-my.sharepoint.com/:o:/r/personal/aarada_pmintl_net/_layouts/15/Doc.aspx?sourcedoc=%7B5f0e4ef2-1035-4cbc-92f5-48b58e9e9b08%7D&action=edit&wd=target(Octombrie%202024.one%7C112afbb9-45d7-48bf-85ab-14745a3d9dea%2FQA%20RRP%20Shift%20Info%2003%5C%2F10%5C%2F2024_%7C771d6a15-d39a-4a56-8017-2dcbe4f02d08%2F)&wdorigin=NavigationUrl"
+          target="_blank"
+          ><span>Shift Info</span></a
+        >
+        <a
+          href="https://pmicloud.sharepoint.com/teams/Quality-ManufacturingQuality-Quality-Romania/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=EasCZV&CID=bcc76dbb%2D3e6f%2D4d24%2Da8b3%2D651c885bed9a&FolderCTID=0x012000E30F741710485B4F85A96CDEF2964C74&id=%2Fteams%2FQuality%2DManufacturingQuality%2DQuality%2DRomania%2FShared%20Documents%2FGeneral%2F2%2E%20MQ%20Secondary%20RRP%2F01%2E%20Routine%20activities%2F04%2E%20Plan%20productie%20%28%20Flow%20MBR%20%29"
+          target="_blank"
+          ><span>Plan RRP</span></a
+        >
+        <a
+          href="https://login.microsoftonline.com/8b86a65e-3c3a-4406-8ac3-19a6b5cc52bc/oauth2/authorize?client_id=0000000c-0000-0000-c000-000000000000&redirect_uri=https%3a%2f%2faccount.activedirectory.windowsazure.com%2f&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dAQAAAAMAAAAIVGVuYW50SWSrATZYOGpQMFNfYUdRbS1vTTNHZHFJSmlFQlBNZjFndHQwa3pqdVNsYWNVZS04YURBYy1ZLXpjakowdHgxNVNzeWJvSDlfV2pSaFotN0NkRzN3Wm1fcVp5X1dNdWFOYllub20zZXdhbEVCM2JaTFR5T2JuZHdFaFV6QmhWNGhwZkhSSGVfWGFCSVNQakRNNm1iNmZveFlCeW5Tb2VvMWNhVC1SQmd5RUxvYTZpcwkucmVkaXJlY3T3Amh0dHBzOi8vYWNjb3VudC5hY3RpdmVkaXJlY3Rvcnkud2luZG93c2F6dXJlLmNvbS9hcHBsaWNhdGlvbnMvcmVkaXJlY3R0b2FwcGxpY2F0aW9uLmFzcHg_T3BlcmF0aW9uPUxpbmtlZFNpZ25JbiZhcHBsaWNhdGlvbkxpbmtOYW1lPVZlZXZhJTIwVmF1bHQmYXBwbGljYXRpb25JZD01ZDMxYjhjMC0xODQ4LTQ4ODgtYTQzNS1iZDdlMWY4ZmRmNDAmdGVuYW50SWQ9OGI4NmE2NWUtM2MzYS00NDA2LThhYzMtMTlhNmI1Y2M1MmJjJlJlbGF5U3RhdGU9aHR0cHMlM0ElMkYlMkZwbWktcXVhbGl0eW9uZS52ZWV2YXZhdWx0LmNvbSUyRnVpJTJGJTIzdCUyRjBUQjAwMDAwMDAwMDEwMSUyRmFsbCUzRmZjYWglM0QlMjZpbml0U3JjaCUzRGZhbHNlJTI2ZHRvJTNEdHJ1ZR5PcGVuSWRDb25uZWN0LkNvZGUuUmVkaXJlY3RVcmnAAUk0di15SVE4TEM0U3JFazhaazJOUTZfTFJBdDFZYzdLcFNmR0E4N2R6aGtlTWRWLUp1X1NkREJkYmdZbHZ4WlNvd01qWlRmRTdaQUpsNTEzeFAyZ0Z1UjRQWFVJdGVvMWVPazRobFhoeWxPMnN5eUpHbzdZYlIyRk56UVg0SWkxV3Zvd3RlRVZrRUpsUEw1YnR1dGZNTE9oa0g1Qi1mZl9CZURwVDJPVE8wRW5wWUxDNm84NzBnTDh0akZBQmtiMA&nonce=1680979979.wZxanQDm7hRPfI8h7JZvAQ&nux=1&sso_nonce=AwABAAEAAAACAOz_BQD0_29HUrmWQ71SiFlapTXIhfRXo-ow9Iu18KsY-h4AKt226-Y_XJrpk90-1sr53WD4SatRIOmdqVeqbLYUBB1Ilr0gAA&client-request-id=8185e1e5-4849-4206-94f7-2d396f76159a&mscrid=8185e1e5-4849-4206-94f7-2d396f76159a"
+          target="_blank"
+          ><span>Veeva</span></a
+        >
+        <a href="https://app.pmidigiperf.com/" target="_blank"
+          ><span>Digi Perf</span></a
+        >
+        <a
+          href="ms-excel:ofe|u|https://pmicloud.sharepoint.com/:x:/r/teams/Quality-InfoExchange-Quality-InfoExchange-RO/_layouts/15/Doc.aspx?sourcedoc=%7B6857C8D6-EF9E-48D7-82CF-DE9BD9538C66%7D&file=Formular%20cereri%20speciale%20V2%20(CC-RRPPMR).xlsx&wdLOR=cFA33AACA-F6EC-4707-9D9F-10AD3137E848&action=default&mobileredirect=true&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1727952914316&web=1"
+          target="_blank"
+          ><span>Cereri Speciale</span></a
+        >
+        <a
+          href="ms-excel:ofe|u|https://pmicloud-my.sharepoint.com/:x:/r/personal/epopescu_pmintl_net/_layouts/15/Doc.aspx?sourcedoc=%7B2D1CBDAE-A5C3-4A6E-B4D8-90E1DEB4A3E0%7D&file=Prelevari%20cartuse%20acelasi%20PO%20combiner%20-%20mixare.xlsx&action=default&mobileredirect=true"
+          target="_blank"
+          ><span>Formular Mixare</span></a
+        >
+        <a
+          href="http://imelrpt-ro-prd.pmiapps.biz/Reports_PRD/report/iMEL/Local%20Reports/Quality/Material%20Traceability"
+          target="_blank"
+          ><span>Material Traceability</span></a
+        >
+        <a
+          href="http://pmroimel-reporting.ro.pmi/reports_prd/report/iMEL/Local%20Reports/Quality/Anexa%207"
+          target="_blank"
+          ><span>Anexa 7</span></a
+        >
+        <a
+          href="http://imelrpt-ro-prd.pmiapps.biz/Reports_PRD/report/iMEL/LES/FGReport"
+          target="_blank"
+          ><span>FG Report</span></a
+        >
+      </div>
+    </div>
+    <div id="nav2" class="overlay overlay-2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav('nav2')"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#" target="_blank"><span>Site 1</span></a>
+        <a href="#" target="_blank"><span>Site 2</span></a>
+        <a href="#" target="_blank"><span>Site 3</span></a>
+      </div>
+    </div>
+    <div id="nav3" class="overlay overlay-3">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav('nav3')"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#" target="_blank"><span>Site 1</span></a>
+        <a href="#" target="_blank"><span>Site 2</span></a>
+        <a href="#" target="_blank"><span>Site 3</span></a>
+      </div>
+    </div>
+    <div id="nav4" class="overlay overlay-4">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav('nav4')"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#" target="_blank"><span>Site 1</span></a>
+        <a href="#" target="_blank"><span>Site 2</span></a>
+        <a href="#" target="_blank"><span>Site 3</span></a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
