@@ -16,7 +16,7 @@ body {
 /* Conținutul principal */
 .main-content {
   position: relative;
-  bottom: 350px;
+  bottom: 150px;
   z-index: 2; /* Ridică butoanele deasupra imaginii */
 }
 
