@@ -160,7 +160,7 @@ body {
   background-color: #00a2ff;
   background-image: url("/Pictures/iqos3.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw 100vh;
   background-position: center center;
 }
 
