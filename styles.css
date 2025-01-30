@@ -160,7 +160,7 @@ body {
   background-color: #00a2ff;
   background-image: url("/Pictures/iqos3.png");
   background-repeat: no-repeat;
-  background-size: 180rem;
+  background-size: cover;
 }
 
 /* Overlay-ul 2 */
